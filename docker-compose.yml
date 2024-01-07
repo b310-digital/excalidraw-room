@@ -1,0 +1,9 @@
+services:
+  app_dev:
+    build:
+      context: .
+      target: development
+    stdin_open: true
+    command: sleep infinity
+    volumes:
+      - ./:/excalidraw-room:cached

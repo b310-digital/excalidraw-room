@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# Allow files and directories
+!/src
+!package.json
+!yarn.lock
+!tsconfig.json
+!pm2.production.json

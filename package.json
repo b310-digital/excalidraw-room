@@ -1,6 +1,12 @@
 {
   "packageManager": "yarn@4.3.1",
   "dependencies": {
+    "socket.io": "4.7.3",
+    "express": "4.18.2",
+    "debug": "4.3.4"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
     "@excalidraw/eslint-config": "1.0.1",
     "@excalidraw/prettier-config": "1.0.2",
     "@types/debug": "4.1.5",
@@ -18,7 +24,6 @@
     "prettier": "2.2.1",
     "socket.io": "^4.6.1",
     "socket.io-client": "^4.8.1",
-    "ts-node-dev": "^1.1.8",
     "tsx": "4.19.1",
     "typescript": "5.5.4"
   },
