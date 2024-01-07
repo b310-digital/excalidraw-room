@@ -16,12 +16,6 @@ const serverDebug = debug("server");
 const ioDebug = debug("io");
 const socketDebug = debug("socket");
 
-require("dotenv").config(
-  process.env.NODE_ENV !== "development"
-    ? { path: ".env.production" }
-    : { path: ".env.development" },
-);
-
 const app = express();
 const port =
   process.env.PORT || (process.env.NODE_ENV !== "development" ? 80 : 3002); // default port to listen
