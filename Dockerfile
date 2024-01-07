@@ -38,6 +38,4 @@ RUN yarn install --production && yarn cache clean
 COPY pm2.production.json /excalidraw-room/
 COPY --from=production_buildstage /excalidraw-room/dist /excalidraw-room/dist
 
-EXPOSE 8080
-
 CMD ["pm2-runtime", "/excalidraw-room/pm2.production.json"]
