@@ -9,6 +9,7 @@
   "autorestart": true,
   "exec_mode": "fork_mode",
   "instances": 1,
+  "port": 8080,
   "env": {
     "NODE_ENV": "production"
   }
