@@ -48,8 +48,7 @@
     "start:dev": "cross-env NODE_ENV=development ts-node-dev --respawn --transpile-only src/index.ts",
     "test:code": "eslint --ext .ts . && tsc --noEmit",
     "test:other": "yarn prettier --list-different",
-    "test": "yarn test:other && yarn test:code",
-    "test:node": "tsx --test test/**/*.ts"
+    "test": "tsx --test test/**/*.ts"
   },
   "version": "1.0.0"
 }
