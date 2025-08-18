@@ -1,4 +1,5 @@
 {
+  "packageManager": "yarn@4.3.1",
   "dependencies": {
     "@excalidraw/eslint-config": "1.0.1",
     "@excalidraw/prettier-config": "1.0.2",
