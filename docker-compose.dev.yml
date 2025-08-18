@@ -1,0 +1,32 @@
+# Development compose file.
+# Usage:
+#   docker compose -f docker-compose.dev.yml up --build
+# (or docker-compose depending on your Docker version)
+# This will:
+#  - Build the existing Dockerfile
+#  - Run the server in development (ts-node-dev) with live reload
+#  - Mount source/public files so changes reflect without rebuilding image
+#  - Expose port 3002 (default dev port used in src/index.ts)
+
+services:
+  excalidraw-room:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: development
+      PORT: 3002
+      DEBUG: server,io,socket
+
+    # Allocate a TTY & keep stdin open so you can attach (docker compose exec)
+    tty: true
+    stdin_open: true
+
+    command: ['sh']
+
+    # Mount project for live edits; keep node_modules inside a named volume so we don't clobber it
+    volumes:
+      - ./:/excalidraw-room
+
+    ports:
+      - "3002:3002"
