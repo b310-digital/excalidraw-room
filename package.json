@@ -31,7 +31,7 @@
     "prettier": "prettier . --ignore-path=.gitignore",
     "start": "node dist/index.js",
     "start:dev": "cross-env NODE_ENV=development ts-node-dev --respawn --transpile-only src/index.ts",
-    "test:code": "eslint --ext .ts .",
+    "test:code": "eslint --ext .ts . && tsc --noEmit",
     "test:other": "yarn prettier --list-different",
     "test": "yarn test:other && yarn test:code"
   },
