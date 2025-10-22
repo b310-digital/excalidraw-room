@@ -25,10 +25,13 @@ require("dotenv").config(
 const app = express();
 const port =
   process.env.PORT || (process.env.NODE_ENV !== "development" ? 80 : 3002); // default port to listen
+const basePath = process.env.BASE_PATH
+  ? process.env.BASE_PATH.replace(/\/+$/, "") // strip trailing slashes
+  : "";
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get(basePath + "/", (req, res) => {
   res.send("Excalidraw collaboration server is up :)");
 });
 
@@ -47,6 +50,7 @@ try {
       credentials: true,
     },
     allowEIO3: true,
+    path: basePath + "/socket.io",
   });
 
   io.on("connection", (socket) => {
