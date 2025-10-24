@@ -446,6 +446,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/dotenv@npm:^8.2.3":
+  version: 8.2.3
+  resolution: "@types/dotenv@npm:8.2.3"
+  dependencies:
+    dotenv: "npm:*"
+  checksum: 10c6/a65fe560349afad2e4c532e3ebdc72b6f61db1ddf24d07eefcd223a7ad05ed26ba01dcd1e078bbe453c4345b7ab4576eda1032f1a8c036315fdd790c66e57247
+  languageName: node
+  linkType: hard
+
 "@types/estree@npm:^1.0.6":
   version: 1.0.8
   resolution: "@types/estree@npm:1.0.8"
@@ -497,19 +506,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:24":
-  version: 24.3.0
-  resolution: "@types/node@npm:24.3.0"
-  dependencies:
-    undici-types: "npm:~7.10.0"
-  checksum: 10c6/10ae934d8308e5310f8f683217900c29f3fcfbc0e18570b9a79232ece4335f3d707402d968aa6a553022cd3588385cdd67a11e7336d41946f03b19a9ac23c363
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:>=10.0.0":
   version: 20.1.4
   resolution: "@types/node@npm:20.1.4"
   checksum: 10c6/080f7c48d9eb999c9efe8425d21c3d57ee9fedfa317f0829a282769b9a2204e193f1fa5eaff05e392ba5b64a32dc626f9a9475fec1393157c760c7beff65d282
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^24.9.1":
+  version: 24.9.1
+  resolution: "@types/node@npm:24.9.1"
+  dependencies:
+    undici-types: "npm:~7.16.0"
+  checksum: 10c6/036db3800f4fd60b2e5192f5ed63e24796f13fd72335bee6497358f75c1e360cd35c03c2fa1293b7800f592609febdded7b8dd1695cd82cd3049b70a507f1269
   languageName: node
   linkType: hard
 
@@ -1140,10 +1149,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "dotenv@npm:10.0.0"
-  checksum: 10c6/74f2402d26510657b873da64bbd9c3c798b66dd78cb098d11dc11c29be39f1fedac7188fc2792d2e961a9abf1003189172dceb8e82b63dcaf57d028f16f2ac84
+"dotenv@npm:*, dotenv@npm:^17.2.3":
+  version: 17.2.3
+  resolution: "dotenv@npm:17.2.3"
+  checksum: 10c6/980f0daaf241a0e4fc4a047a812ff817d9f9d0e4a7e07be03a233654a1bfb1fe7fac73c91839ffd5f83dc4193a85efb7a78eab1e0734b93484e5cad46f845914
   languageName: node
   linkType: hard
 
@@ -1547,13 +1556,14 @@ __metadata:
     "@excalidraw/eslint-config": "npm:1.0.1"
     "@excalidraw/prettier-config": "npm:1.0.2"
     "@types/debug": "npm:4.1.5"
+    "@types/dotenv": "npm:^8.2.3"
     "@types/express": "npm:4.17.11"
-    "@types/node": "npm:24"
+    "@types/node": "npm:^24.9.1"
     "@typescript-eslint/eslint-plugin": "npm:7.18.0"
     "@typescript-eslint/parser": "npm:7.18.0"
     cross-env: "npm:^7.0.3"
     debug: "npm:4.3.1"
-    dotenv: "npm:^10.0.0"
+    dotenv: "npm:^17.2.3"
     eslint: "npm:^9.3.0"
     eslint-config-prettier: "npm:8.1.0"
     eslint-plugin-prettier: "npm:3.3.1"
@@ -3424,10 +3434,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~7.10.0":
-  version: 7.10.0
-  resolution: "undici-types@npm:7.10.0"
-  checksum: 10c6/d1e1716601cbb6d31daa63cda76f127e1617133c70ddf40516e15017a7d321289bdff651240c0b7b9f9ef44d62ef7d6dd057231fdb8393dc45118f1d5289c2c6
+"undici-types@npm:~7.16.0":
+  version: 7.16.0
+  resolution: "undici-types@npm:7.16.0"
+  checksum: 10c6/9831e7bb93bf860bb46fcb18477c2a321cc4e3b4e5066651f8bef29bd6abc374f79e615fd838ab129dca646acf80adeabd2598db7e549945e585c4dde02152f0
   languageName: node
   linkType: hard
 
