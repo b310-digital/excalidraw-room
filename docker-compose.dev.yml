@@ -22,7 +22,7 @@ services:
     tty: true
     stdin_open: true
 
-    command: ['sh']
+    command: ["sh"]
 
     # Mount project for live edits; keep node_modules inside a named volume so we don't clobber it
     volumes:
